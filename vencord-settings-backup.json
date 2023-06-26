@@ -3,14 +3,14 @@
         "notifyAboutUpdates": true,
         "autoUpdate": false,
         "autoUpdateNotification": true,
-        "useQuickCss": true,
-        "themeLinks": [
-            "https://raw.githubusercontent.com/B0tCreati0n/Discord-Themes/main/btcreatin.theme.css"
-        ],
+        "useQuickCss": false,
+        "themeLinks": [],
         "enableReactDevtools": false,
         "frameless": false,
         "transparent": false,
         "winCtrlQ": false,
+        "macosTranslucency": false,
+        "disableMinSize": true,
         "winNativeTitleBar": false,
         "plugins": {
             "MessageEventsAPI": {
@@ -81,13 +81,19 @@
                 "enabled": true
             },
             "EmoteCloner": {
-                "enabled": false
+                "enabled": true
             },
             "Experiments": {
                 "enabled": false
             },
             "FakeNitro": {
-                "enabled": false
+                "enabled": false,
+                "enableEmojiBypass": true,
+                "enableStickerBypass": true,
+                "enableStreamQualityBypass": true,
+                "transformStickers": true,
+                "transformEmojis": true,
+                "transformCompoundSentence": false
             },
             "FixInbox": {
                 "enabled": true
@@ -96,7 +102,7 @@
                 "enabled": true
             },
             "iLoveSpam": {
-                "enabled": false
+                "enabled": true
             },
             "IgnoreActivities": {
                 "enabled": false
@@ -121,7 +127,10 @@
                 "ignoreSelf": false
             },
             "MuteNewGuild": {
-                "enabled": true
+                "enabled": true,
+                "guild": true,
+                "everyone": true,
+                "role": true
             },
             "NoBlockedMessages": {
                 "enabled": false
@@ -160,7 +169,7 @@
                 "enabled": false
             },
             "RevealAllSpoilers": {
-                "enabled": false
+                "enabled": true
             },
             "ReverseImageSearch": {
                 "enabled": true
@@ -177,10 +186,13 @@
             "ShowHiddenChannels": {
                 "enabled": true,
                 "showMode": 0,
-                "hideUnreads": true
+                "hideUnreads": true,
+                "defaultAllowedUsersAndRolesDropdownState": true
             },
             "SilentMessageToggle": {
-                "enabled": true
+                "enabled": true,
+                "persistState": false,
+                "autoDisable": true
             },
             "SilentTyping": {
                 "enabled": true,
@@ -207,7 +219,8 @@
                 "enabled": false
             },
             "TypingIndicator": {
-                "enabled": false
+                "enabled": true,
+                "includeMutedChannels": false
             },
             "TypingTweaks": {
                 "enabled": true,
@@ -225,7 +238,8 @@
                 "enabled": false
             },
             "ViewIcons": {
-                "enabled": true
+                "enabled": true,
+                "format": "webp"
             },
             "VolumeBooster": {
                 "enabled": true,
@@ -245,13 +259,14 @@
                 "enabled": true
             },
             "ConsoleShortcuts": {
-                "enabled": false
+                "enabled": true
             },
             "CorruptMp4s": {
                 "enabled": false
             },
             "CustomRPC": {
-                "enabled": false
+                "enabled": false,
+                "type": 0
             },
             "UrbanDictionary": {
                 "enabled": false
@@ -278,7 +293,9 @@
                 "enabled": false
             },
             "MessageClickActions": {
-                "enabled": false
+                "enabled": true,
+                "requireModifier": false,
+                "enableDoubleClickToEdit": true
             },
             "MessageTags": {
                 "enabled": true
@@ -311,7 +328,7 @@
                 "enabled": false
             },
             "ReadAllNotificationsButton": {
-                "enabled": false
+                "enabled": true
             },
             "ServerListIndicators": {
                 "enabled": true,
@@ -327,7 +344,8 @@
                 "enabled": false
             },
             "ViewRaw": {
-                "enabled": true
+                "enabled": true,
+                "clickMethod": "Left"
             },
             "BadgeAPI": {
                 "enabled": true
@@ -342,13 +360,19 @@
                 "enabled": true
             },
             "SearchReply": {
-                "enabled": false
+                "enabled": true
             },
             "SettingsStoreAPI": {
                 "enabled": false
             },
             "BetterFolders": {
-                "enabled": false
+                "enabled": true,
+                "sidebar": true,
+                "closeAllHomeButton": false,
+                "sidebarAnim": true,
+                "closeAllFolders": false,
+                "forceOpen": false,
+                "closeOthers": false
             },
             "FakeProfileThemes": {
                 "enabled": false
@@ -357,7 +381,7 @@
                 "enabled": false
             },
             "GifPaste": {
-                "enabled": false
+                "enabled": true
             },
             "ImageZoom": {
                 "enabled": false
@@ -366,15 +390,109 @@
                 "enabled": false
             },
             "RelationshipNotifier": {
-                "enabled": false
+                "enabled": true,
+                "offlineRemovals": true,
+                "groups": true,
+                "servers": true,
+                "friends": true,
+                "friendRequestCancels": true,
+                "notices": false
             },
             "UserVoiceShow": {
-                "enabled": false
+                "enabled": true,
+                "showInUserProfileModal": true,
+                "showVoiceChannelSectionHeader": true
             },
             "Wikisearch": {
-                "enabled": false
+                "enabled": true
             },
             "GreetStickerPicker": {
+                "enabled": false
+            },
+            "AlwaysAnimate": {
+                "enabled": false
+            },
+            "PinDMs": {
+                "enabled": false
+            },
+            "ReviewDB": {
+                "enabled": true,
+                "notifyReviews": true,
+                "showWarning": true,
+                "hideTimestamps": false,
+                "token": "Uf0UoU65LQbzQFl6hSrl9s4Gnb84RZ",
+                "user": {
+                    "ID": 9294,
+                    "discordID": "462479789614170134",
+                    "username": "b0tcreati0n",
+                    "profilePhoto": "https://cdn.discordapp.com/avatars/462479789614170134/a_25c1e74ccb566cea5c47cc81b908ab2e.gif?size=128",
+                    "clientMods": [
+                        "vencord"
+                    ],
+                    "warningCount": 1,
+                    "badges": [],
+                    "banInfo": null,
+                    "lastReviewID": 0,
+                    "type": 0
+                },
+                "reviewsDropdownState": true
+            },
+            "SendTimestamps": {
+                "enabled": true
+            },
+            "ShowAllMessageButtons": {
+                "enabled": false
+            },
+            "ShowConnections": {
+                "enabled": false
+            },
+            "ShowMeYourName": {
+                "enabled": true,
+                "mode": "nick-user",
+                "inReplies": false
+            },
+            "TextReplace": {
+                "enabled": false
+            },
+            "Translate": {
+                "enabled": true,
+                "autoTranslate": false,
+                "receivedInput": "auto",
+                "receivedOutput": "da",
+                "sentInput": "auto",
+                "sentOutput": "en"
+            },
+            "USRBG": {
+                "enabled": false
+            },
+            "ValidUser": {
+                "enabled": true
+            },
+            "VencordToolbox": {
+                "enabled": false
+            },
+            "FavoriteEmojiFirst": {
+                "enabled": false
+            },
+            "PermissionsViewer": {
+                "enabled": false
+            },
+            "Party mode 🎉": {
+                "enabled": false
+            },
+            "NoPendingCount": {
+                "enabled": false
+            },
+            "NoProfileThemes": {
+                "enabled": false
+            },
+            "BiggerStreamPreview": {
+                "enabled": false
+            },
+            "MutualGroupDMs": {
+                "enabled": false
+            },
+            "UnsuppressEmbeds": {
                 "enabled": false
             }
         },
@@ -384,13 +502,11 @@
             "useNative": "not-focused",
             "logLimit": 50
         },
-        "macosTranslucency": false,
-        "disableMinSize": true,
         "cloud": {
-            "authenticated": false,
+            "authenticated": true,
             "url": "https://api.vencord.dev/",
-            "settingsSync": false,
-            "settingsSyncVersion": 1681286181329
+            "settingsSync": true,
+            "settingsSyncVersion": 1687795820367
         }
     },
     "quickCss": ""

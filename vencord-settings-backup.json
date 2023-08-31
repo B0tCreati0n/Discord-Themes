@@ -49,8 +49,8 @@
                 "randomisedLength": 7
             },
             "BANger": {
-                "enabled": false,
-                "source": "https://i.imgur.com/wp5q52C.mp4"
+                "enabled": true,
+                "source": "https://imgur.com/a/kLG9p1X"
             },
             "BetterGifAltText": {
                 "enabled": true
@@ -59,7 +59,8 @@
                 "enabled": false
             },
             "BetterRoleDot": {
-                "enabled": false
+                "enabled": false,
+                "bothStyles": false
             },
             "BetterUploadButton": {
                 "enabled": true
@@ -75,7 +76,9 @@
                 "enabled": false
             },
             "CrashHandler": {
-                "enabled": true
+                "enabled": true,
+                "attemptToPreventCrashes": true,
+                "attemptToNavigateToHome": false
             },
             "DisableDMCallIdle": {
                 "enabled": true
@@ -118,7 +121,10 @@
                 "enabled": true
             },
             "MessageLinkEmbeds": {
-                "enabled": false
+                "enabled": true,
+                "automodEmbeds": "never",
+                "listMode": "blacklist",
+                "idList": ""
             },
             "MessageLogger": {
                 "enabled": false,
@@ -145,7 +151,10 @@
                 "enabled": false
             },
             "NoReplyMention": {
-                "enabled": false
+                "enabled": true,
+                "userList": "1234567890123445,1234567890123445",
+                "shouldPingListed": true,
+                "inverseShiftReply": false
             },
             "NoScreensharePreview": {
                 "enabled": true
@@ -154,7 +163,7 @@
                 "enabled": true
             },
             "NoUnblockToJump": {
-                "enabled": false
+                "enabled": true
             },
             "NSFWGateBypass": {
                 "enabled": false
@@ -232,14 +241,15 @@
                 "enabled": false
             },
             "ReactErrorDecoder": {
-                "enabled": false
+                "enabled": true
             },
             "VoiceChatDoubleClick": {
                 "enabled": false
             },
             "ViewIcons": {
                 "enabled": true,
-                "format": "webp"
+                "format": "webp",
+                "imgSize": "1024"
             },
             "VolumeBooster": {
                 "enabled": true,
@@ -266,7 +276,14 @@
             },
             "CustomRPC": {
                 "enabled": false,
-                "type": 0
+                "type": 0,
+                "timestampMode": 3,
+                "appName": "Fuck off Pia",
+                "imageBig": "https://static-00.iconduck.com/assets.00/middle-finger-emoji-684x1024-2w0cs541.png",
+                "imageSmall": "https://static-00.iconduck.com/assets.00/middle-finger-emoji-684x1024-2w0cs541.png",
+                "appID": "1144549648778936411",
+                "details": "I want to say to you that you shoud fuck off my friends pc's and stop spying on us!!",
+                "startTime": 1692942900
             },
             "UrbanDictionary": {
                 "enabled": false
@@ -295,7 +312,8 @@
             "MessageClickActions": {
                 "enabled": true,
                 "requireModifier": false,
-                "enableDoubleClickToEdit": true
+                "enableDoubleClickToEdit": true,
+                "enableDoubleClickToReply": true
             },
             "MessageTags": {
                 "enabled": true
@@ -375,7 +393,8 @@
                 "closeOthers": false
             },
             "FakeProfileThemes": {
-                "enabled": false
+                "enabled": false,
+                "nitroFirst": true
             },
             "GameActivityToggle": {
                 "enabled": false
@@ -413,7 +432,9 @@
                 "enabled": false
             },
             "PinDMs": {
-                "enabled": false
+                "enabled": true,
+                "pinnedDMs": "783328123483062302,1132396702721114222,1116081667539472577",
+                "pinOrder": 0
             },
             "ReviewDB": {
                 "enabled": true,
@@ -425,17 +446,26 @@
                     "ID": 9294,
                     "discordID": "462479789614170134",
                     "username": "b0tcreati0n",
-                    "profilePhoto": "https://cdn.discordapp.com/avatars/462479789614170134/a_25c1e74ccb566cea5c47cc81b908ab2e.gif?size=128",
+                    "profilePhoto": "https://cdn.discordapp.com/avatars/462479789614170134/25c1e74ccb566cea5c47cc81b908ab2e.png?size=128",
                     "clientMods": [
                         "vencord"
                     ],
-                    "warningCount": 1,
-                    "badges": [],
+                    "warningCount": 0,
+                    "badges": [
+                        {
+                            "name": "Banned",
+                            "icon": "https://cdn.discordapp.com/emojis/399233923898540053.gif?size=128",
+                            "redirectURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                            "type": 0,
+                            "description": "This user is banned from ReviewDB."
+                        }
+                    ],
                     "banInfo": null,
                     "lastReviewID": 0,
-                    "type": 0
+                    "type": -1
                 },
-                "reviewsDropdownState": true
+                "reviewsDropdownState": true,
+                "hideBlockedUsers": true
             },
             "SendTimestamps": {
                 "enabled": true
@@ -449,7 +479,8 @@
             "ShowMeYourName": {
                 "enabled": true,
                 "mode": "nick-user",
-                "inReplies": false
+                "inReplies": false,
+                "displayNames": false
             },
             "TextReplace": {
                 "enabled": false
@@ -475,7 +506,9 @@
                 "enabled": false
             },
             "PermissionsViewer": {
-                "enabled": false
+                "enabled": true,
+                "permissionsSortOrder": 0,
+                "defaultPermissionsDropdownState": false
             },
             "Party mode 🎉": {
                 "enabled": false
@@ -490,9 +523,36 @@
                 "enabled": false
             },
             "MutualGroupDMs": {
-                "enabled": false
+                "enabled": true
             },
             "UnsuppressEmbeds": {
+                "enabled": false
+            },
+            "OpenInApp": {
+                "enabled": true,
+                "spotify": true,
+                "steam": true,
+                "epic": true
+            },
+            "FavoriteGifSearch": {
+                "enabled": false
+            },
+            "VoiceMessages": {
+                "enabled": false
+            },
+            "NormalizeMessageLinks": {
+                "enabled": false
+            },
+            "PreviewMessage": {
+                "enabled": false
+            },
+            "SecretRingToneEnabler": {
+                "enabled": false
+            },
+            "CopyUserURLs": {
+                "enabled": true
+            },
+            "FixSpotifyEmbeds": {
                 "enabled": false
             }
         },
@@ -506,8 +566,9 @@
             "authenticated": true,
             "url": "https://api.vencord.dev/",
             "settingsSync": true,
-            "settingsSyncVersion": 1687795820367
-        }
+            "settingsSyncVersion": 1693464429191
+        },
+        "enabledThemes": []
     },
     "quickCss": ""
 }
